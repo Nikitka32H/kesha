@@ -1,8 +1,8 @@
-def is_palindrome(word):
-    return word == word[::-1]
+chislo = int(input("номер квитка:"))
 
-user_word = input("Nikita")
-if is_palindrome(user_word):
-    print("паліндром")
-else:
-    print("не паліндром.")
+dig1 = chislo // 100
+chislo = chislo - dig1 * 100
+dig2 = chislo // 10
+dig3=chislo - dig2 * 10
+q = dig1 + dig2 + dig3
+print("вартість квитка-",q)
